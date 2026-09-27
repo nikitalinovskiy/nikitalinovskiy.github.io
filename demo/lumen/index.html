@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Стоматология ЛУМЕН в Санкт-Петербурге. Осмотр со снимком 0 ₽</title>
+<meta name="description" content="Стоматология полного цикла на Марата. Импланты, лечение, гигиена, виниры. Снимок на экране перед вами, план и цена до начала лечения. Осмотр со снимком бесплатно.">
+<meta name="theme-color" content="#0C1214">
+<meta property="og:title" content="Стоматология ЛУМЕН в Санкт-Петербурге. Осмотр со снимком 0 ₽">
+<meta property="og:description" content="Снимок на экране перед вами. План и цена до начала лечения. Осмотр со снимком бесплатно.">
+<meta property="og:type" content="website">
+<!-- DEPLOY STEP: patch og:image and og:url with the absolute live URL before zipping -->
+<meta property="og:image" content="assets/hero-ending.jpg">
+<meta property="og:url" content="/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C1214'/%3E%3Cpath d='M16 5 L21 27 L11 27 Z' fill='%23E9A94F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   ЛУМЕН. Cinema at the door, clinic inside.
+   ============================================================ */
+:root{
+  --canvas:#F5F2ED;
+  --surface:#FFFFFF;
+  --surface-2:#EBE6DE;
+  --ink:#131C1B;
+  --ink-2:#59635F;
+  --line:rgba(19,28,27,.13);
+  --line-2:rgba(19,28,27,.26);
+  --accent:#8A5207;
+  --accent-hover:#6E4105;
+  --accent-wash:#F3E7D2;
+
+  --dark:#0C1214;
+  --dark-2:#131C1F;
+  --dark-ink:#EFEDE8;
+  --dark-ink-2:#98A2A3;
+  --dark-line:rgba(233,236,238,.14);
+  --dark-accent:#E9A94F;
+
+  --tshadow:0 1px 2px rgba(4,7,8,.9),0 3px 12px rgba(4,7,8,.7),0 10px 40px rgba(4,7,8,.7);
+  --e-out:cubic-bezier(.22,.61,.36,1);
+  --e-soft:cubic-bezier(.4,.14,.3,1);
+  --display:"Unbounded",'Trebuchet MS',system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --r:16px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:hidden;overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--canvas);color:var(--ink);
+  font-family:var(--body);font-weight:400;font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin:0}
+p{margin:0}
+a{color:inherit}
+ul{margin:0;padding:0;list-style:none}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-70px;z-index:300;background:var(--ink);color:#fff;
+  padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;transition:top .25s var(--e-out)}
+.skip:focus-visible{top:12px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+
+.kicker{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.h2{font-size:clamp(26px,3.5vw,44px);max-width:20ch}
+.lede{color:var(--ink-2);font-weight:300;font-size:17.5px;max-width:62ch}
+.sec-head{margin-bottom:clamp(30px,5vh,54px)}
+.sec-head .h2{margin-bottom:14px}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--accent);color:#fff;text-decoration:none;font-family:var(--body);
+  font-weight:600;font-size:15px;padding:15px 28px;border-radius:999px;border:0;cursor:pointer;
+  transition:background .3s var(--e-out),transform .3s var(--e-out)}
+.btn:hover{background:var(--accent-hover);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line-2)}
+.btn.ghost:hover{background:rgba(19,28,27,.05)}
+.btn.on-dark{background:var(--dark-accent);color:#231704}
+.btn.on-dark:hover{background:#F6C57A}
+.btn.ghost.on-dark{background:transparent;color:var(--dark-ink);box-shadow:inset 0 0 0 1px rgba(233,236,238,.34)}
+.btn.ghost.on-dark:hover{background:rgba(233,236,238,.09)}
+@media (pointer:coarse){.btn{min-height:46px}}
+
+/* ============================================================
+   Top bar: the clinic's identity card, visible from pixel one
+   ============================================================ */
+.top{position:sticky;top:0;z-index:90;transition:background .4s var(--e-out),box-shadow .4s var(--e-out)}
+.top .row{display:flex;align-items:center;gap:22px;padding:14px 0}
+.mark{display:flex;align-items:baseline;gap:10px;text-decoration:none;flex:none}
+.mark b{font-family:var(--display);font-weight:500;font-size:20px;letter-spacing:.2em;color:var(--dark-ink)}
+.mark span{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dark-ink-2)}
+.topinfo{display:flex;gap:26px;margin-left:auto;align-items:center}
+.ti{display:grid;gap:2px;line-height:1.25}
+.ti b{font-size:14.5px;font-weight:600;color:var(--dark-ink);font-family:var(--body)}
+.ti span{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-ink-2)}
+.ti a{text-decoration:none}
+.top .btn{flex:none;padding:12px 22px;font-size:14px}
+.top.solid{background:rgba(245,242,237,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.top.solid .mark b{color:var(--ink)}
+.top.solid .mark span,.top.solid .ti span{color:var(--ink-2)}
+.top.solid .ti b{color:var(--ink)}
+.top.solid .btn.on-dark{background:var(--accent);color:#fff}
+.top.solid .btn.on-dark:hover{background:var(--accent-hover)}
+
+/* ============================================================
+   Hero: the film plays behind a real clinic card
+   ============================================================ */
+.hero{position:relative;height:300vh;background:var(--dark);margin-top:-66px}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden;background:var(--dark)}
+.stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .8s var(--e-out);will-change:transform;transform:translateZ(0)}
+.stage.video-ready video{opacity:1}
+.poster{position:absolute;inset:0;background-size:cover;background-position:center;transition:opacity .8s var(--e-out)}
+.stage.video-ready .poster{opacity:0}
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(6,9,10,.88) 0%,rgba(6,9,10,.66) 42%,rgba(6,9,10,.20) 72%,rgba(6,9,10,.42) 100%),
+             linear-gradient(180deg,rgba(6,9,10,.66) 0%,rgba(6,9,10,0) 34%,rgba(6,9,10,.5) 100%)}
+.ring{position:absolute;right:26px;bottom:26px;width:40px;height:40px;color:var(--dark-accent);
+  opacity:.85;transform:rotate(-90deg)}
+.stage.video-ready .ring,.stage.video-failed .ring{opacity:0;transition:opacity .5s var(--e-out)}
+
+.herolayer{position:absolute;inset:0;display:grid;align-content:center;
+  padding:76px clamp(22px,5vw,84px) 0;color:var(--dark-ink);text-shadow:var(--tshadow)}
+.herocard{max-width:640px}
+.herocard .kicker{color:var(--dark-accent)}
+.herocard h1{font-size:clamp(29px,4.4vw,58px);line-height:1.06;max-width:16ch;font-weight:300}
+.herocard .sub{margin-top:18px;font-weight:300;font-size:clamp(15px,1.45vw,18.5px);
+  color:#DCDAD4;max-width:44ch}
+.herocta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.herocta .btn{text-shadow:none}
+.facts{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px}
+.fact{display:grid;gap:2px;padding:11px 16px;border-radius:12px;
+  background:rgba(8,12,14,.5);border:1px solid rgba(233,236,238,.16);backdrop-filter:blur(9px)}
+.fact b{font-family:var(--display);font-weight:400;font-size:17px;color:var(--dark-ink);letter-spacing:-.01em}
+.fact span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark-ink-2)}
+
+/* the settle, the one cinematic beat that remains */
+.settle{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;
+  text-align:center;padding:0 24px;opacity:0;pointer-events:none;color:var(--dark-ink);
+  text-shadow:var(--tshadow)}
+.settle .w{display:inline-block;white-space:pre;
+  --kc:clamp(0,(var(--k,0) - var(--th,0))*3,1);opacity:var(--kc);
+  transform:translateY(calc((1 - var(--kc)) * 18px))}
+.settle .big{font-family:var(--display);font-weight:300;font-size:clamp(30px,5vw,64px);letter-spacing:.02em}
+.settle .sub{margin-top:16px;font-weight:300;font-size:clamp(15px,1.5vw,19px);color:#DCDAD4;max-width:34ch;
+  --ks:clamp(0,(var(--k,0) - .5)*3,1);opacity:var(--ks)}
+.settle .btnrow{margin-top:26px;--kb:clamp(0,(var(--k,0) - .7)*4,1);opacity:var(--kb)}
+.settle .btn{text-shadow:none}
+
+/* ============================================================
+   Light body
+   ============================================================ */
+.sec{position:relative;padding:clamp(58px,8vh,104px) 0}
+.sec.tint{background:var(--surface-2)}
+.sec > .wrap > *{opacity:0;transform:translateY(16px);
+  transition:opacity .7s var(--e-out),transform .7s var(--e-out)}
+.sec.in > .wrap > *{opacity:1;transform:none}
+.sec.in > .wrap > *:nth-child(2){transition-delay:.07s}
+.sec.in > .wrap > *:nth-child(3){transition-delay:.14s}
+.sec.done > .wrap > *{transition-delay:0s}
+
+/* ---------- services by intent ---------- */
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.svccard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px 22px 20px;display:grid;align-content:start;gap:14px;
+  transition:border-color .35s var(--e-out),transform .35s var(--e-out),box-shadow .35s var(--e-out)}
+.svccard:hover{border-color:var(--line-2);transform:translateY(-3px);box-shadow:0 12px 30px rgba(19,28,27,.07)}
+.svccard .ic{width:38px;height:38px;color:var(--accent);display:block}
+.svccard .ic svg{width:100%;height:100%;display:block;fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.svccard h3{font-size:19px}
+.svccard ul{display:grid;gap:9px}
+.svccard li{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  font-size:14.5px;color:var(--ink-2);border-bottom:1px dashed var(--line);padding-bottom:9px}
+.svccard li:last-child{border-bottom:0;padding-bottom:0}
+.svccard li b{font-family:var(--mono);font-size:13px;color:var(--ink);white-space:nowrap;font-weight:500}
+.svccard .free b{color:var(--accent)}
+
+/* ---------- doctors ---------- */
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.doc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  transition:border-color .35s var(--e-out),transform .35s var(--e-out)}
+.doc:hover{border-color:var(--line-2);transform:translateY(-3px)}
+/* the photo slot fills itself the moment the file exists; the monogram sits underneath */
+.doc .shot{position:relative;aspect-ratio:4/5;background:linear-gradient(160deg,#20302E 0%,#0F1718 100%);
+  display:grid;place-items:center;overflow:hidden}
+.doc .shot::after{content:"";position:absolute;inset:0;
+  background-image:var(--photo);background-size:cover;background-position:center top}
+.doc .mono{font-family:var(--display);font-weight:300;font-size:56px;color:rgba(233,169,79,.5);letter-spacing:.04em}
+.doc .body{padding:20px 22px 24px;display:grid;gap:10px}
+.doc h3{font-size:19px}
+.doc .role{font-size:14.5px;color:var(--ink-2);font-weight:300}
+.doc .nums{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.doc .num{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink);
+  background:var(--accent-wash);border-radius:999px;padding:6px 11px}
+
+/* ---------- what is inside: image rows ---------- */
+.inside{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ins{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.ins .pic{aspect-ratio:16/10;background:var(--surface-2);background-size:cover;background-position:center}
+.ins .txt{padding:20px 22px 24px;display:grid;gap:8px}
+.ins h3{font-size:18px}
+.ins p{font-size:14.5px;color:var(--ink-2);font-weight:300}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.step{background:var(--canvas);padding:26px 22px 28px;display:grid;gap:10px;align-content:start}
+.step .n{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent)}
+.step h3{font-size:18px}
+.step p{font-size:14.5px;color:var(--ink-2);font-weight:300}
+
+/* ---------- the interactive moment, on a dark band ---------- */
+.darkband{background:var(--dark);color:var(--dark-ink);position:relative;overflow:hidden}
+.darkband .kicker{color:var(--dark-accent)}
+.darkband .lede{color:var(--dark-ink-2)}
+.darkband .h2{color:var(--dark-ink)}
+.reveal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,60px);align-items:center}
+.lamp{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;cursor:pointer;touch-action:none;
+  background:var(--dark-2);border:1px solid var(--dark-line);
+  display:grid;place-items:center;padding:16px 16px 44px}
+.lamp::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 70% 80% at 50% 108%,rgba(255,214,150,.42) 0%,rgba(255,214,150,0) 62%);
+  opacity:var(--light,0);transition:opacity .12s linear}
+/* the panoramic view: dark until the visitor raises the light */
+.xray{width:100%;height:auto;display:block;position:relative;z-index:1}
+.xray .jaw path{fill:none;stroke:rgba(233,169,79,.34);stroke-width:2.5;
+  opacity:calc(.14 + .86*var(--light,0));transition:opacity .12s linear}
+.xray .arch .t rect,.xray .arch .t path{fill:#F0EADA;
+  opacity:calc(.13 + .74*var(--light,0));transition:opacity .12s linear}
+.xray .arch.lower .t rect,.xray .arch.lower .t path{opacity:calc(.11 + .68*var(--light,0))}
+.xray .mk{opacity:clamp(0,(var(--light,0) - var(--at,0))*7,1)}
+.xray .mk .ring{fill:none;stroke:#E9A94F;stroke-width:2.5}
+.xray .mk line{stroke:#E9A94F;stroke-width:1.5;stroke-dasharray:4 4}
+.xray .mk .badge{fill:#E9A94F}
+.xray .mk text{fill:#12181A;font-family:var(--body);font-weight:700;font-size:17px;text-anchor:middle}
+.lamp .hint{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
+  z-index:3;white-space:nowrap;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dark-ink);background:rgba(8,8,15,.55);
+  border:1px solid rgba(150,150,170,.3);border-radius:10px;backdrop-filter:blur(10px);padding:9px 14px;
+  opacity:calc(1 - var(--light,0)*1.6);transition:opacity .2s var(--e-out)}
+.lamp .meter{position:absolute;left:20px;right:20px;bottom:0;height:2px;background:rgba(233,236,238,.14);
+  border-radius:2px;overflow:hidden;z-index:2}
+.lamp .meter i{display:block;height:100%;background:var(--dark-accent);
+  transform:scaleX(var(--light,0));transform-origin:left;transition:transform .12s linear}
+.findings{display:grid}
+.finding{padding:20px 0;border-bottom:1px solid var(--dark-line);
+  opacity:var(--fo,0);transform:translateX(calc((1 - var(--fo,0)) * 14px));
+  transition:opacity .45s var(--e-out),transform .45s var(--e-out)}
+.finding:first-child{border-top:1px solid var(--dark-line)}
+.finding b{display:block;font-family:var(--display);font-weight:400;font-size:17px;margin-bottom:6px}
+.finding span{color:var(--dark-ink-2);font-weight:300;font-size:15px}
+
+/* ---------- prices ---------- */
+.pricegrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pricecol{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.pricecol h3{font-size:16px;padding:18px 24px;background:var(--surface-2);border-bottom:1px solid var(--line)}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:18px;
+  padding:15px 24px;border-bottom:1px solid var(--line)}
+.price:last-child{border-bottom:0}
+.price .name{font-size:15.5px}
+.price .val{font-family:var(--mono);font-size:14.5px;white-space:nowrap;font-weight:500}
+.price.free .val{color:var(--accent)}
+.note{margin-top:16px;color:var(--ink-2);font-size:14.5px;font-weight:300;max-width:64ch}
+
+/* ---------- guarantees ---------- */
+.gua{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px 20px;display:grid;gap:9px;align-content:start}
+.g b{font-family:var(--display);font-weight:400;font-size:26px;color:var(--accent);letter-spacing:-.02em}
+.g h3{font-size:16px}
+.g p{font-size:14px;color:var(--ink-2);font-weight:300}
+
+/* ---------- reviews ---------- */
+.revhead{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:26px}
+.rate{display:flex;align-items:baseline;gap:8px;background:var(--surface);border:1px solid var(--line);
+  border-radius:999px;padding:9px 16px}
+.rate b{font-family:var(--mono);font-size:15px;color:var(--accent)}
+.rate span{font-size:13px;color:var(--ink-2)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;display:grid;gap:14px;align-content:start}
+.quote p{font-size:16px;line-height:1.55}
+.quote .who{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+
+/* ---------- faq ---------- */
+.faq{border-top:1px solid var(--line)}
+.qa{border-bottom:1px solid var(--line)}
+.qa button{width:100%;background:none;border:0;color:inherit;font:inherit;cursor:pointer;
+  display:flex;align-items:baseline;justify-content:space-between;gap:22px;padding:22px 0;text-align:left;
+  font-family:var(--display);font-weight:400;font-size:clamp(17px,1.9vw,21px);line-height:1.25}
+.qa .mk{font-family:var(--mono);font-size:19px;color:var(--accent);flex:none;transition:transform .4s var(--e-out)}
+.qa[data-open="1"] .mk{transform:rotate(45deg)}
+.qa .ans{max-height:0;overflow:hidden;transition:max-height .5s var(--e-soft)}
+.qa .ans p{padding:0 0 24px;max-width:66ch;color:var(--ink-2);font-weight:300}
+
+/* ---------- booking + contacts ---------- */
+.book{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:start}
+.bookform{background:var(--dark-2);border:1px solid var(--dark-line);border-radius:20px;padding:clamp(26px,3.4vw,40px)}
+.bookform h2{font-size:clamp(23px,2.7vw,34px);color:var(--dark-ink);margin-bottom:12px}
+.bookform .lede{color:var(--dark-ink-2);font-size:16px;margin-bottom:22px}
+form{display:grid;gap:12px}
+.field label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--dark-ink-2);margin-bottom:7px}
+.field input{width:100%;background:rgba(8,12,14,.7);color:var(--dark-ink);border:1px solid rgba(233,236,238,.2);
+  border-radius:12px;padding:14px 16px;font:inherit;font-size:16px;transition:border-color .3s var(--e-out)}
+.field input:focus{border-color:var(--dark-accent);outline:none}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--dark-ink-2);font-weight:300}
+.consent input{margin-top:3px;accent-color:var(--dark-accent);width:16px;height:16px;flex:none}
+.ok{color:var(--dark-accent);font-weight:500;font-size:15px;
+  opacity:0;transform:translateY(6px);transition:opacity .45s var(--e-out),transform .45s var(--e-out)}
+.ok.show{opacity:1;transform:none}
+.contacts{display:grid;gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.cc{background:var(--surface);padding:22px 24px;display:grid;gap:5px}
+.cc span{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-2)}
+.cc b{font-size:17px;font-weight:600}
+.cc a{text-decoration:none}
+.cc small{font-size:14px;color:var(--ink-2);font-weight:300}
+
+/* ---------- footer ---------- */
+.foot{background:var(--dark);color:var(--dark-ink-2);padding:44px 0 52px}
+.foot .row{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:flex-start}
+.foot .mark b{color:var(--dark-ink)}
+.foot small{font-size:13px;font-weight:300;max-width:66ch;display:block;line-height:1.65}
+
+/* ============================================================
+   Static hero, the five gates. CSS side must match the JS array.
+   ============================================================ */
+@media (max-width: 720px),
+       (orientation: portrait) and (max-width: 1024px),
+       (orientation: portrait) and (pointer: coarse),
+       (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
+       (prefers-reduced-motion: reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:auto;min-height:0}
+  .stage video,.ring,.settle{display:none}
+  .herolayer{position:relative;inset:auto;padding:96px clamp(22px,6vw,60px) clamp(40px,7vh,70px)}
+}
+
+@media (max-width:1080px){
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .gua{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  /* the sticky bar must stay a bar. Address and hours live in the contacts block anyway. */
+  .ti.wide{display:none}
+  .top .row{gap:12px;padding:10px 0}
+  .topinfo{margin-left:auto;gap:14px}
+  .top .btn{padding:11px 18px}
+  .docs,.inside,.quotes{grid-template-columns:1fr}
+  .reveal,.book,.pricegrid{grid-template-columns:1fr}
+  /* let the panoramic view set its own height instead of floating in a wide box */
+  .lamp{aspect-ratio:auto;padding:14px 14px 42px}
+  .hero{margin-top:0}
+  .herolayer{padding-top:40px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .svc{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .gua{grid-template-columns:1fr}
+  .herocta{display:grid}
+  .facts{gap:8px}
+  .fact{padding:9px 13px}
+  .top .btn{width:100%}
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;transition-delay:0ms !important}
+  .sec > .wrap > *{opacity:1;transform:none}
+  .finding{opacity:1;transform:none}
+  .lamp::after{opacity:.06}
+  .lamp .hint{opacity:0}
+  .lamp .meter i{transform:scaleX(1)}
+}
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused !important}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="top" id="top">
+  <div class="wrap row">
+    <a class="mark" href="#main"><b>ЛУМЕН</b><span>Стоматология</span></a>
+    <div class="topinfo">
+      <div class="ti wide"><b>Санкт-Петербург, ул. Марата, 12</b><span>м. Владимирская, 4 минуты пешком</span></div>
+      <div class="ti wide"><b>Ежедневно 9:00 – 21:00</b><span>без выходных</span></div>
+      <div class="ti"><b><a href="tel:+78121234567">+7 812 123 45 67</a></b><span>перезвоним за 15 минут</span></div>
+    </div>
+    <a class="btn on-dark" href="#zapis">Записаться</a>
+  </div>
+</header>
+
+<div class="hero" id="hero">
+  <div class="stage" id="stage">
+    <div class="poster" id="poster" aria-hidden="true"></div>
+    <video id="hero-video" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
+    <div class="scrim" aria-hidden="true"></div>
+    <svg class="ring" id="ring" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3"
+              stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/>
+    </svg>
+
+    <div class="herolayer" id="herolayer">
+      <div class="herocard">
+        <p class="kicker">Стоматология полного цикла · Санкт-Петербург</p>
+        <h1>Вы увидите всё до того, как мы начнём лечить</h1>
+        <p class="sub">Снимок выводим на экран перед вами. План и цену отдаём на бумаге. Ни один шаг не начинается без вашего согласия.</p>
+        <div class="herocta">
+          <a class="btn on-dark" href="#zapis">Записаться на осмотр</a>
+          <a class="btn ghost on-dark" href="#ceny">Смотреть цены</a>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>0 ₽</b><span>осмотр со снимком</span></div>
+          <div class="fact"><b>14 лет</b><span>клинике</span></div>
+          <div class="fact"><b>11 400</b><span>пациентов</span></div>
+          <div class="fact"><b>4.9</b><span>рейтинг на Яндекс Картах</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="settle" id="settle" aria-hidden="true">
+      <div class="big" data-split="word">Мы включаем свет</div>
+      <p class="sub">И только потом берём инструмент.</p>
+      <div class="btnrow"><a class="btn on-dark" href="#zapis" tabindex="-1">Записаться на осмотр</a></div>
+    </div>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+
+  <!-- services by intent -->
+  <section class="sec" id="uslugi">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Услуги</p>
+        <h2 class="h2">С чем к нам приходят</h2>
+        <p class="lede">Цены обычного случая. Точную сумму вы увидите в плане после осмотра, и в процессе лечения она не вырастет.</p>
+      </div>
+      <div class="svc">
+        <article class="svccard">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.2c-4.2 0-7 2.5-7 6.1 0 2.3.7 3.9 1.2 6.1.5 2.1.6 5.2 2.1 5.2 1.3 0 1.5-2 1.9-4.1.3-1.6.7-2.7 1.8-2.7s1.5 1.1 1.8 2.7c.4 2.1.6 4.1 1.9 4.1 1.5 0 1.6-3.1 2.1-5.2.5-2.2 1.2-3.8 1.2-6.1 0-3.6-2.8-6.1-7-6.1Z"/><rect x="9.6" y="6.6" width="4.8" height="4" rx="1.2" fill="currentColor" stroke="none"/></svg></span>
+          <h3>Вылечить зуб</h3>
+          <ul>
+            <li>Кариес <b>от 8 900 ₽</b></li>
+            <li>Лечение каналов <b>от 14 500 ₽</b></li>
+            <li>Удаление <b>от 4 200 ₽</b></li>
+            <li>Лечение под микроскопом <b>от 19 000 ₽</b></li>
+          </ul>
+        </article>
+        <article class="svccard">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.8 4.2h10.4c.7 0 1.2.6 1.1 1.3l-.7 3.4c-.1.6-.6 1-1.2 1H7.6c-.6 0-1.1-.4-1.2-1l-.7-3.4c-.1-.7.4-1.3 1.1-1.3Z"/><path d="M12 10.4v9.8"/><path d="M9.6 12.3h4.8M9.8 14.8h4.4M10.2 17.3h3.6"/></svg></span>
+          <h3>Поставить имплант</h3>
+          <ul>
+            <li>Имплант под ключ <b>от 74 000 ₽</b></li>
+            <li>Все зубы за 1 день <b>от 320 000 ₽</b></li>
+            <li>Костная пластика <b>от 38 000 ₽</b></li>
+            <li>Коронка на имплант <b>от 32 000 ₽</b></li>
+          </ul>
+        </article>
+        <article class="svccard">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><g transform="translate(-1.3 1.6) scale(0.87)"><path d="M12 3.2c-4.2 0-7 2.5-7 6.1 0 2.3.7 3.9 1.2 6.1.5 2.1.6 5.2 2.1 5.2 1.3 0 1.5-2 1.9-4.1.3-1.6.7-2.7 1.8-2.7s1.5 1.1 1.8 2.7c.4 2.1.6 4.1 1.9 4.1 1.5 0 1.6-3.1 2.1-5.2.5-2.2 1.2-3.8 1.2-6.1 0-3.6-2.8-6.1-7-6.1Z"/></g><path d="M19.1 2.4l.85 2.1 2.1.85-2.1.85-.85 2.1-.85-2.1-2.1-.85 2.1-.85Z" fill="currentColor" stroke="none"/><path d="M21.3 9.4l.5 1.25 1.25.5-1.25.5-.5 1.25-.5-1.25-1.25-.5 1.25-.5Z" fill="currentColor" stroke="none"/></svg></span>
+          <h3>Привести в порядок</h3>
+          <ul>
+            <li class="free">Осмотр со снимком <b>0 ₽</b></li>
+            <li>Чистка Air Flow <b>от 7 500 ₽</b></li>
+            <li>Лечение дёсен <b>от 9 800 ₽</b></li>
+            <li>Детский приём <b>от 3 400 ₽</b></li>
+          </ul>
+        </article>
+        <article class="svccard">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 9.4c1.9 4.6 4.8 6.9 8.4 6.9s6.5-2.3 8.4-6.9"/><path d="M3.6 9.4c5.4-2.1 11.4-2.1 16.8 0"/><path d="M8.4 8.5v5.9M12 8.2v8.1M15.6 8.5v5.9"/></svg></span>
+          <h3>Сделать красиво</h3>
+          <ul>
+            <li>Виниры E-max <b>от 34 000 ₽</b></li>
+            <li>Отбеливание <b>от 22 000 ₽</b></li>
+            <li>Брекеты <b>от 98 000 ₽</b></li>
+            <li>Элайнеры <b>от 145 000 ₽</b></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- doctors -->
+  <section class="sec tint" id="vrachi">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Врачи</p>
+        <h2 class="h2">Лечить вас будут эти люди</h2>
+        <p class="lede">Врача можно выбрать при записи. У каждого свой профиль, и мы не отправим вас к тому, кто занимается другим.</p>
+      </div>
+      <div class="docs">
+        <article class="doc">
+          <div class="shot" data-photo="assets/doc-1.jpg"><span class="mono" aria-hidden="true">АС</span></div>
+          <div class="body">
+            <h3>Андрей Северин</h3>
+            <p class="role">Хирург-имплантолог, главный врач</p>
+            <div class="nums">
+              <span class="num">18 лет опыта</span>
+              <span class="num">4 200 операций</span>
+            </div>
+          </div>
+        </article>
+        <article class="doc">
+          <div class="shot" data-photo="assets/doc-2.jpg"><span class="mono" aria-hidden="true">МК</span></div>
+          <div class="body">
+            <h3>Марина Ковалёва</h3>
+            <p class="role">Стоматолог-терапевт, эндодонтист</p>
+            <div class="nums">
+              <span class="num">12 лет опыта</span>
+              <span class="num">работа под микроскопом</span>
+            </div>
+          </div>
+        </article>
+        <article class="doc">
+          <div class="shot" data-photo="assets/doc-3.jpg"><span class="mono" aria-hidden="true">ОТ</span></div>
+          <div class="body">
+            <h3>Ольга Тимашева</h3>
+            <p class="role">Гигиенист, пародонтолог</p>
+            <div class="nums">
+              <span class="num">9 лет опыта</span>
+              <span class="num">5 100 чисток</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- what is inside -->
+  <section class="sec" id="klinika">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Клиника</p>
+        <h2 class="h2">Что вы увидите, когда придёте</h2>
+      </div>
+      <div class="inside">
+        <article class="ins">
+          <div class="pic" style="background-image:url('assets/promise-3.jpg')" role="img" aria-label="Зона ожидания клиники"></div>
+          <div class="txt">
+            <h3>Приём в своё время</h3>
+            <p>Записи разведены так, чтобы приёмы не наслаивались. Ждать в коридоре не придётся.</p>
+          </div>
+        </article>
+        <article class="ins">
+          <div class="pic" style="background-image:url('assets/promise-1.jpg')" role="img" aria-label="Экран с диагностическим снимком в кабинете"></div>
+          <div class="txt">
+            <h3>Снимок на большом экране</h3>
+            <p>Компьютерная томография прямо в клинике. Врач разбирает снимок вместе с вами, а не за стенкой.</p>
+          </div>
+        </article>
+        <article class="ins">
+          <div class="pic" style="background-image:url('assets/promise-2.jpg')" role="img" aria-label="План лечения на бумаге"></div>
+          <div class="txt">
+            <h3>План на руки</h3>
+            <p>Распечатанный план с этапами и суммой. Решение принимаете дома, а не в кресле под лампой.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- first visit -->
+  <section class="sec tint" id="vizit">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Первый визит</p>
+        <h2 class="h2">Четыре шага, и ни один не начнётся без вашего согласия</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">01</span><h3>Осмотр и снимок</h3><p>Сорок минут. Смотрим всё, включая то, на что вы не жаловались.</p></div>
+        <div class="step"><span class="n">02</span><h3>Разбор у экрана</h3><p>Врач показывает снимок и называет вещи своими именами.</p></div>
+        <div class="step"><span class="n">03</span><h3>План и цена</h3><p>Уходите с планом на руках. Думаете столько, сколько нужно.</p></div>
+        <div class="step"><span class="n">04</span><h3>Лечение</h3><p>Начинаем после вашего согласия. Ни один шаг не появится внезапно.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the interactive moment -->
+  <section class="sec darkband" id="svet">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Попробуйте прямо здесь</p>
+        <h2 class="h2">Включите свет</h2>
+        <p class="lede">Зажмите панель и подержите. На приёме происходит ровно это: чем больше видно, тем меньше поводов для тревоги.</p>
+      </div>
+      <div class="reveal">
+        <div class="lamp" id="lamp" role="button" tabindex="0"
+             aria-label="Нажмите и удерживайте, чтобы включить свет на панорамном снимке и увидеть три находки">
+          <svg class="xray" viewBox="0 0 800 440" role="img" aria-label="Панорамный снимок челюсти с тремя отмеченными находками" preserveAspectRatio="xMidYMid meet">
+<g class="jaw"><path d="M55.3 250.7 Q101.3 290.7 118.0 296.5 Q134.8 302.4 153.8 306.2 Q172.8 310.0 194.0 315.4 Q215.3 320.8 239.5 329.7 Q263.8 338.5 291.0 342.2 Q318.3 345.9 345.5 347.7 Q372.8 349.5 400.0 349.5 Q427.3 349.5 454.5 347.7 Q481.8 345.9 509.0 342.2 Q536.3 338.5 560.5 329.7 Q584.8 320.8 606.0 315.4 Q627.3 310.0 646.3 306.2 Q665.3 302.4 682.0 296.5 Q698.8 290.7 721.8 270.7 L744.8 250.7"/></g>
+<g class="arch upper"><g class="t" transform="translate(101.3 154.7) rotate(20.3)"><rect x="-15.5" y="-47.0" width="31" height="47" rx="9.3"/><path d="M-9.6 -47.0 C-9.6 -74.5 -5.8 -91.0 -2.9 -102.0 Q0.0 -109.0 2.9 -102.0 C5.8 -91.0 9.6 -74.5 9.6 -47.0 Z"/></g><g class="t" transform="translate(134.8 166.4) rotate(18.2)"><rect x="-15.5" y="-47.0" width="31" height="47" rx="9.3"/><path d="M-9.6 -47.0 C-9.6 -74.5 -5.8 -91.0 -2.9 -102.0 Q0.0 -109.0 2.9 -102.0 C5.8 -91.0 9.6 -74.5 9.6 -47.0 Z"/></g><g class="t" transform="translate(172.8 178.0) rotate(15.7)"><rect x="-20.0" y="-42.0" width="40" height="42" rx="12.0"/><path d="M-12.4 -42.0 C-12.4 -70.0 -7.4 -86.8 -3.7 -98.0 Q0.0 -105.0 3.7 -98.0 C7.4 -86.8 12.4 -70.0 12.4 -42.0 Z"/></g><g class="t" transform="translate(215.3 188.8) rotate(12.9)"><rect x="-20.0" y="-42.0" width="40" height="42" rx="12.0"/><path d="M-12.4 -42.0 C-12.4 -70.0 -7.4 -86.8 -3.7 -98.0 Q0.0 -105.0 3.7 -98.0 C7.4 -86.8 12.4 -70.0 12.4 -42.0 Z"/></g><g class="t" transform="translate(263.8 198.5) rotate(9.6)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(318.3 205.9) rotate(5.8)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(372.8 209.5) rotate(1.9)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(427.3 209.5) rotate(-1.9)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(481.8 205.9) rotate(-5.8)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(536.3 198.5) rotate(-9.6)"><rect x="-26.0" y="-46.0" width="52" height="46" rx="15.6"/><path d="M-21.3 -46.0 C-21.3 -76.0 -20.2 -94.0 -17.1 -106.0 Q-14.0 -113.0 -10.9 -106.0 C-7.7 -94.0 -0.5 -76.0 -0.5 -46.0 Z"/><path d="M0.5 -46.0 C0.5 -76.0 7.7 -94.0 10.9 -106.0 Q14.0 -113.0 17.1 -106.0 C20.2 -94.0 21.3 -76.0 21.3 -46.0 Z"/></g><g class="t" transform="translate(584.8 188.8) rotate(-12.9)"><rect x="-20.0" y="-42.0" width="40" height="42" rx="12.0"/><path d="M-12.4 -42.0 C-12.4 -70.0 -7.4 -86.8 -3.7 -98.0 Q0.0 -105.0 3.7 -98.0 C7.4 -86.8 12.4 -70.0 12.4 -42.0 Z"/></g><g class="t" transform="translate(627.3 178.0) rotate(-15.7)"><rect x="-20.0" y="-42.0" width="40" height="42" rx="12.0"/><path d="M-12.4 -42.0 C-12.4 -70.0 -7.4 -86.8 -3.7 -98.0 Q0.0 -105.0 3.7 -98.0 C7.4 -86.8 12.4 -70.0 12.4 -42.0 Z"/></g><g class="t" transform="translate(665.3 166.4) rotate(-18.2)"><rect x="-15.5" y="-47.0" width="31" height="47" rx="9.3"/><path d="M-9.6 -47.0 C-9.6 -74.5 -5.8 -91.0 -2.9 -102.0 Q0.0 -109.0 2.9 -102.0 C5.8 -91.0 9.6 -74.5 9.6 -47.0 Z"/></g><g class="t" transform="translate(698.8 154.7) rotate(-20.3)"><rect x="-15.5" y="-47.0" width="31" height="47" rx="9.3"/><path d="M-9.6 -47.0 C-9.6 -74.5 -5.8 -91.0 -2.9 -102.0 Q0.0 -109.0 2.9 -102.0 C5.8 -91.0 9.6 -74.5 9.6 -47.0 Z"/></g></g>
+<g class="arch lower"><g class="t" transform="translate(101.3 162.7) rotate(20.3)"><rect x="-15.5" y="0.0" width="31" height="47" rx="9.3"/><path d="M-9.6 47.0 C-9.6 74.5 -5.8 91.0 -2.9 102.0 Q0.0 109.0 2.9 102.0 C5.8 91.0 9.6 74.5 9.6 47.0 Z"/></g><g class="t" transform="translate(134.8 174.4) rotate(18.2)"><rect x="-15.5" y="0.0" width="31" height="47" rx="9.3"/><path d="M-9.6 47.0 C-9.6 74.5 -5.8 91.0 -2.9 102.0 Q0.0 109.0 2.9 102.0 C5.8 91.0 9.6 74.5 9.6 47.0 Z"/></g><g class="t" transform="translate(172.8 186.0) rotate(15.7)"><rect x="-20.0" y="0.0" width="40" height="42" rx="12.0"/><path d="M-12.4 42.0 C-12.4 70.0 -7.4 86.8 -3.7 98.0 Q0.0 105.0 3.7 98.0 C7.4 86.8 12.4 70.0 12.4 42.0 Z"/></g><g class="t" transform="translate(215.3 196.8) rotate(12.9)"><rect x="-20.0" y="0.0" width="40" height="42" rx="12.0"/><path d="M-12.4 42.0 C-12.4 70.0 -7.4 86.8 -3.7 98.0 Q0.0 105.0 3.7 98.0 C7.4 86.8 12.4 70.0 12.4 42.0 Z"/></g><g class="t" transform="translate(263.8 206.5) rotate(9.6)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(318.3 213.9) rotate(5.8)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(372.8 217.5) rotate(1.9)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(427.3 217.5) rotate(-1.9)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(481.8 213.9) rotate(-5.8)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(536.3 206.5) rotate(-9.6)"><rect x="-26.0" y="0.0" width="52" height="46" rx="15.6"/><path d="M-21.3 46.0 C-21.3 76.0 -20.2 94.0 -17.1 106.0 Q-14.0 113.0 -10.9 106.0 C-7.7 94.0 -0.5 76.0 -0.5 46.0 Z"/><path d="M0.5 46.0 C0.5 76.0 7.7 94.0 10.9 106.0 Q14.0 113.0 17.1 106.0 C20.2 94.0 21.3 76.0 21.3 46.0 Z"/></g><g class="t" transform="translate(584.8 196.8) rotate(-12.9)"><rect x="-20.0" y="0.0" width="40" height="42" rx="12.0"/><path d="M-12.4 42.0 C-12.4 70.0 -7.4 86.8 -3.7 98.0 Q0.0 105.0 3.7 98.0 C7.4 86.8 12.4 70.0 12.4 42.0 Z"/></g><g class="t" transform="translate(627.3 186.0) rotate(-15.7)"><rect x="-20.0" y="0.0" width="40" height="42" rx="12.0"/><path d="M-12.4 42.0 C-12.4 70.0 -7.4 86.8 -3.7 98.0 Q0.0 105.0 3.7 98.0 C7.4 86.8 12.4 70.0 12.4 42.0 Z"/></g><g class="t" transform="translate(665.3 174.4) rotate(-18.2)"><rect x="-15.5" y="0.0" width="31" height="47" rx="9.3"/><path d="M-9.6 47.0 C-9.6 74.5 -5.8 91.0 -2.9 102.0 Q0.0 109.0 2.9 102.0 C5.8 91.0 9.6 74.5 9.6 47.0 Z"/></g><g class="t" transform="translate(698.8 162.7) rotate(-20.3)"><rect x="-15.5" y="0.0" width="31" height="47" rx="9.3"/><path d="M-9.6 47.0 C-9.6 74.5 -5.8 91.0 -2.9 102.0 Q0.0 109.0 2.9 102.0 C5.8 91.0 9.6 74.5 9.6 47.0 Z"/></g></g>
+<g class="marks"><g class="mk" style="--at:0.28"><circle class="ring" cx="536.3" cy="175.5" r="37.4"/><line x1="536.3" y1="175.5" x2="536.3" y2="60.5"/><circle class="badge" cx="536.3" cy="60.5" r="15"/><text x="536.3" y="66.5">1</text></g><g class="mk" style="--at:0.56"><circle class="ring" cx="372.8" cy="240.5" r="37.4"/><line x1="372.8" y1="240.5" x2="372.8" y2="385.5"/><circle class="badge" cx="372.8" cy="385.5" r="15"/><text x="372.8" y="391.5">2</text></g><g class="mk" style="--at:0.84"><circle class="ring" cx="215.3" cy="167.8" r="28.8"/><line x1="215.3" y1="167.8" x2="215.3" y2="58.8"/><circle class="badge" cx="215.3" cy="58.8" r="15"/><text x="215.3" y="64.8">3</text></g></g>
+</svg>
+          <span class="hint">Нажмите и держите</span>
+          <span class="meter" aria-hidden="true"><i></i></span>
+        </div>
+        <div class="findings" id="findings">
+          <div class="finding" data-at=".28">
+            <b>Верхний левый шестой</b>
+            <span>Кариес между зубами. Виден только на снимке, заболит примерно через год.</span>
+          </div>
+          <div class="finding" data-at=".56">
+            <b>Нижние передние</b>
+            <span>Камень под десной. Это он даёт кровь при чистке, а не «слабые дёсны».</span>
+          </div>
+          <div class="finding" data-at=".84">
+            <b>Старая пломба справа</b>
+            <span>Пока держится. Менять сейчас не нужно, посмотрим через год. Так и запишем в план.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prices -->
+  <section class="sec" id="ceny">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Цены</p>
+        <h2 class="h2">Сколько это стоит, до того как вы сели в кресло</h2>
+      </div>
+      <div class="pricegrid">
+        <div class="pricecol">
+          <h3>Диагностика и профилактика</h3>
+          <div class="price free"><span class="name">Осмотр с компьютерной томографией</span><span class="val">0 ₽</span></div>
+          <div class="price"><span class="name">Профессиональная чистка</span><span class="val">от 7 500 ₽</span></div>
+          <div class="price"><span class="name">Лечение дёсен, курс</span><span class="val">от 9 800 ₽</span></div>
+          <div class="price"><span class="name">Детский профилактический приём</span><span class="val">от 3 400 ₽</span></div>
+        </div>
+        <div class="pricecol">
+          <h3>Лечение и восстановление</h3>
+          <div class="price"><span class="name">Лечение кариеса</span><span class="val">от 8 900 ₽</span></div>
+          <div class="price"><span class="name">Лечение каналов под микроскопом</span><span class="val">от 19 000 ₽</span></div>
+          <div class="price"><span class="name">Имплант под ключ с коронкой</span><span class="val">от 74 000 ₽</span></div>
+          <div class="price"><span class="name">Керамический винир E-max</span><span class="val">от 34 000 ₽</span></div>
+        </div>
+      </div>
+      <p class="note">Это цены обычного случая, а не приманка. После осмотра вы получаете план, где отдельно помечено то, что нужно делать сейчас, и то, что может подождать.</p>
+    </div>
+  </section>
+
+  <!-- guarantees and money -->
+  <section class="sec tint" id="garantii">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Деньги и документы</p>
+        <h2 class="h2">Что вы получаете кроме лечения</h2>
+      </div>
+      <div class="gua">
+        <div class="g">
+          <b>Фикс</b>
+          <h3>Сумма из плана</h3>
+          <p>Сумма фиксируется в договоре до начала лечения и в процессе не растёт.</p>
+        </div>
+        <div class="g">
+          <b>0%</b>
+          <h3>Рассрочка</h3>
+          <p>До 12 месяцев без процентов и переплат. Оформляется в клинике за один визит.</p>
+        </div>
+        <div class="g">
+          <b>13%</b>
+          <h3>Налоговый вычет</h3>
+          <p>Готовим весь пакет документов сами. Вам остаётся подать заявление.</p>
+        </div>
+        <div class="g">
+          <b>Договор</b>
+          <h3>Лицензия и документы</h3>
+          <p>Договор с фиксированной суммой и медицинская лицензия. Копии выдаём на руки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reviews -->
+  <section class="sec" id="otzyvy">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Отзывы</p>
+        <h2 class="h2">Что говорят те, кто дошёл</h2>
+      </div>
+      <div class="revhead">
+        <span class="rate"><b>4.9</b><span>Яндекс Карты, 412 отзывов</span></span>
+        <span class="rate"><b>4.8</b><span>ПроДокторов, 173 отзыва</span></span>
+        <span class="rate"><b>5.0</b><span>2ГИС, 96 отзывов</span></span>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <p>«Пять лет не доходила. Думала, будут читать нотации. Не читали. Показали снимок и спросили, с чего хочу начать.»</p>
+          <figcaption class="who">Марина, 34 года</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>«Назвали сумму на первом визите, и в конце она совпала до рубля. Для меня это было главное.»</p>
+          <figcaption class="who">Дмитрий, 41 год</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>«Врач сказал, что один зуб можно пока не трогать, и объяснил почему. Ничего не навязывали.»</p>
+          <figcaption class="who">Ольга, 29 лет</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq -->
+  <section class="sec tint" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Вопросы</p>
+        <h2 class="h2">Вопросы, которые задают чаще всего</h2>
+      </div>
+      <div class="faq">
+        <div class="qa" data-open="0">
+          <button type="button" aria-expanded="false">Будет больно?<span class="mk" aria-hidden="true">+</span></button>
+          <div class="ans"><p>Больно бывает от неожиданности. Поэтому врач говорит вслух, что делает сейчас и что будет через минуту. Анестезию подбираем до начала, а не когда вы уже дёрнулись. Есть лечение во сне под седацией, если тревога сильная.</p></div>
+        </div>
+        <div class="qa" data-open="0">
+          <button type="button" aria-expanded="false">Не навяжете ли лишнего?<span class="mk" aria-hidden="true">+</span></button>
+          <div class="ans"><p>В плане мы разделяем то, что нужно сделать сейчас, и то, что может подождать. Второе так и помечено, и вы решаете сами. Врач не получает процент с суммы плана.</p></div>
+        </div>
+        <div class="qa" data-open="0">
+          <button type="button" aria-expanded="false">Я давно не был, и мне неловко.<span class="mk" aria-hidden="true">+</span></button>
+          <div class="ans"><p>Каждый третий взрослый откладывает визит годами. Мы видим это каждый день и не комментируем. Приходите на бесплатный осмотр, дальше решайте сами.</p></div>
+        </div>
+        <div class="qa" data-open="0">
+          <button type="button" aria-expanded="false">Сумма вырастет в процессе?<span class="mk" aria-hidden="true">+</span></button>
+          <div class="ans"><p>Нет. Сумма из плана фиксируется в договоре. Если во время лечения открывается что-то новое, мы останавливаемся и разговариваем, а не дописываем в счёт.</p></div>
+        </div>
+        <div class="qa" data-open="0">
+          <button type="button" aria-expanded="false">Можно ли лечиться в рассрочку?<span class="mk" aria-hidden="true">+</span></button>
+          <div class="ans"><p>Да, до 12 месяцев без процентов. Оформляется в клинике за один визит. Плюс за лечение можно вернуть 13% налогового вычета, документы готовим мы.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- booking and contacts -->
+  <section class="sec" id="zapis">
+    <div class="wrap">
+      <div class="book">
+        <div class="bookform">
+          <p class="kicker" style="color:var(--dark-accent)">Запись</p>
+          <h2>Первый визит начинается с осмотра</h2>
+          <p class="lede">Осмотр с компьютерной томографией бесплатный, и он ни к чему вас не обязывает. Дальше решаете вы.</p>
+          <form id="book" novalidate>
+            <div class="field">
+              <label for="nm">Как вас зовут</label>
+              <input id="nm" name="nm" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="ph">Телефон</label>
+              <input id="ph" name="ph" type="tel" autocomplete="tel" required>
+            </div>
+            <label class="consent"><input type="checkbox" id="cs" required>
+              <span>Согласен на обработку персональных данных и с политикой конфиденциальности</span></label>
+            <button class="btn on-dark" type="submit">Записаться на осмотр</button>
+            <p class="ok" id="ok" role="status">Спасибо. Перезвоним в течение пятнадцати минут.</p>
+          </form>
+        </div>
+        <div class="contacts">
+          <div class="cc"><span>Адрес</span><b>Санкт-Петербург, ул. Марата, 12</b><small>Метро Владимирская, 4 минуты пешком. Своя парковка во дворе.</small></div>
+          <div class="cc"><span>Часы работы</span><b>Ежедневно 9:00 – 21:00</b><small>Без выходных и перерывов. Дежурный врач принимает по острой боли в день обращения.</small></div>
+          <div class="cc"><span>Телефон</span><b><a href="tel:+78121234567">+7 812 123 45 67</a></b><small>Или напишите в WhatsApp, отвечаем в рабочие часы.</small></div>
+          <div class="cc"><span>Документы</span><b>Лицензия ЛО-78-01-000000</b><small>Копия лицензии и договор выдаются на руки до начала лечения.</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap row">
+    <a class="mark" href="#main"><b>ЛУМЕН</b><span>Стоматология</span></a>
+    <small>ЛУМЕН это вымышленная марка. Сайт сделан как демонстрация работы студии, все имена врачей, цены, адрес, номер лицензии и отзывы придуманы. Изображения и видео созданы нейросетью.</small>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+
+var stage   = document.getElementById('stage');
+var video   = document.getElementById('hero-video');
+var poster  = document.getElementById('poster');
+var ring    = document.getElementById('ring');
+var hero    = document.getElementById('hero');
+var topbar  = document.getElementById('top');
+var herolayer = document.getElementById('herolayer');
+var settle  = document.getElementById('settle');
+
+var POSTER_URL = 'assets/hero-poster.jpg';
+var VIDEO_URL  = 'assets/hero-scrub.mp4';
+var VIDEO_BYTES = 2366626;
+
+var CARD_OUT_A = 0.62, CARD_OUT_B = 0.78;   /* the clinic card hands over to the settle */
+var SETTLE_A   = 0.74, SETTLE_B   = 1.00;
+
+function clamp(v,lo,hi){return Math.min(hi,Math.max(lo,v))}
+function smoothstep(p,e0,e1){var t=clamp((p-e0)/(e1-e0),0,1);return t*t*(3-2*t)}
+
+/* split the settle headline into word spans, seeded so it is identical every load */
+function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+(function splitSettle(){
+  var el = settle.querySelector('[data-split]');
+  if (!el) return;
+  var text = el.textContent, words = text.split(' ');
+  var sr = document.createElement('span'); sr.className='sr'; sr.textContent = text;
+  var vis = document.createElement('span'); vis.setAttribute('aria-hidden','true');
+  words.forEach(function(w,i){
+    var s = document.createElement('span'); s.className='w'; s.textContent = w;
+    s.style.setProperty('--th', (i / Math.max(1,words.length)) * 0.5);
+    vis.appendChild(s);
+    if (i < words.length-1) vis.appendChild(document.createTextNode(' '));
+  });
+  el.textContent=''; el.appendChild(sr); el.appendChild(vis);
+})();
+
+var cardOp = -1, setOp = -1, setK = -1, setDead = null;
+function paintHero(p){
+  var co = 1 - smoothstep(p, CARD_OUT_A, CARD_OUT_B);
+  if (Math.abs(co - cardOp) > 0.004){
+    herolayer.style.opacity = co.toFixed(3);
+    herolayer.style.pointerEvents = co < 0.5 ? 'none' : '';
+    cardOp = co;
+  }
+  var so = smoothstep(p, SETTLE_A, SETTLE_A + 0.06);
+  var sk = clamp((p - SETTLE_A) / 0.14, 0, 1);
+  if (Math.abs(so - setOp) > 0.004){ settle.style.opacity = so.toFixed(3); setOp = so; }
+  if (Math.abs(sk - setK) > 0.008){ settle.style.setProperty('--k', sk.toFixed(3)); setK = sk; }
+  var dead = so < 0.5;
+  if (dead !== setDead){ settle.inert = dead; settle.setAttribute('aria-hidden', dead ? 'true' : 'false'); setDead = dead; }
+}
+
+/* ---------- gated seeks ---------- */
+var seekBusy=false, pendingTime=null;
+function requestSeek(t){
+  if (!video.duration || !isFinite(t)) return;
+  if (seekBusy){ pendingTime=t; return; }
+  seekBusy=true;
+  try { video.currentTime=t; } catch(e){ seekBusy=false; }
+}
+video.addEventListener('seeked', function(){
+  seekBusy=false;
+  if (pendingTime!==null){ var t=pendingTime; pendingTime=null; requestSeek(t); }
+});
+video.addEventListener('error', function(){ seekBusy=false; pendingTime=null; failVideo(); });
+
+/* ---------- the lerp loop that rests ---------- */
+var target=0, shown=0, rafId=null, lastTick=0, heroOnScreen=true;
+function heroProgress(){
+  var range = hero.offsetHeight - window.innerHeight;
+  if (range <= 0) return 0;
+  return clamp(-hero.getBoundingClientRect().top / range, 0, 1);
+}
+function tick(now){
+  var dt = Math.min(100, now - (lastTick||now)); lastTick = now;
+  shown += (target - shown) * (1 - Math.pow(1-0.16, dt/16.667));
+  if (Math.abs(target-shown) < 0.0005){ shown=target; rafId=null; lastTick=0; }
+  else { rafId = requestAnimationFrame(tick); }
+  if (video.duration) requestSeek(shown * video.duration);
+  paintHero(shown);
+}
+function onScroll(){
+  target = heroProgress();
+  if (rafId===null && heroOnScreen) rafId = requestAnimationFrame(tick);
+}
+if ('IntersectionObserver' in window){
+  new IntersectionObserver(function(es){ heroOnScreen = es[0].isIntersecting; }, {threshold:0}).observe(hero);
+}
+
+/* ---------- blob loader ---------- */
+var started=false, heroInit=false;
+function startBlobFetch(){ if (started) return; started=true; loadHeroBlob().catch(failVideo); }
+function initHeroOnce(){
+  if (heroInit) return; heroInit=true;
+  poster.style.backgroundImage = "url('" + POSTER_URL + "')";
+  var img = new Image();
+  img.onload = startBlobFetch; img.onerror = startBlobFetch; img.src = POSTER_URL;
+  setTimeout(startBlobFetch, 4000);
+}
+async function loadHeroBlob(){
+  var ctrl = new AbortController();
+  var watchdog = setTimeout(function(){ ctrl.abort(); }, 20000);
+  var res = await fetch(VIDEO_URL, { signal: ctrl.signal });
+  if (!res.ok || !res.body) throw new Error('video fetch failed');
+  var total = Number(res.headers.get('Content-Length')) || VIDEO_BYTES;
+  var reader = res.body.getReader(), chunks=[], got=0, lastRing=0;
+  for(;;){
+    var r = await reader.read();
+    if (r.done) break;
+    clearTimeout(watchdog);
+    watchdog = setTimeout(function(){ ctrl.abort(); }, 20000);
+    chunks.push(r.value); got += r.value.length;
+    var frac = Math.min(1, got/total), now = performance.now();
+    if (now - lastRing > 100 || frac === 1){
+      lastRing = now; ring.style.setProperty('--ld', Math.round(126*(1-frac)));
+    }
+  }
+  clearTimeout(watchdog);
+  ring.style.setProperty('--ld', 0);
+  video.src = URL.createObjectURL(new Blob(chunks));
+  video.load();
+  video.addEventListener('canplay', function(){
+    requestSeek(heroProgress() * video.duration);
+    stage.classList.add('video-ready');
+  }, { once:true });
+}
+function failVideo(){
+  if (stage.classList.contains('video-failed')) return;
+  stage.classList.add('video-failed');
+}
+
+/* ---------- the five static-hero gates. Strings must match the CSS exactly. ---------- */
+var GATES = [
+  '(max-width: 720px)',
+  '(orientation: portrait) and (max-width: 1024px)',
+  '(orientation: portrait) and (pointer: coarse)',
+  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)',
+  '(prefers-reduced-motion: reduce)'
+];
+var scrubOn=false;
+function enableScrub(){
+  if (scrubOn) return; scrubOn=true;
+  initHeroOnce();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  cardOp=-1; setOp=-1; setK=-1; setDead=null;
+  paintHero(heroProgress());
+  onScroll();
+}
+function disableScrub(){
+  if (!scrubOn) return; scrubOn=false;
+  window.removeEventListener('scroll', onScroll);
+  if (rafId!==null){ cancelAnimationFrame(rafId); rafId=null; }
+  /* the static hero shows the clinic card at full strength and no settle */
+  herolayer.style.opacity=''; herolayer.style.pointerEvents='';
+  settle.inert = true; settle.setAttribute('aria-hidden','true');
+}
+function applyHeroMode(){
+  if (GATES.some(function(q){ return matchMedia(q).matches; })) disableScrub();
+  else enableScrub();
+}
+var MQLS = GATES.map(function(q){ return matchMedia(q); });
+MQLS.forEach(function(m){
+  if (m.addEventListener) m.addEventListener('change', applyHeroMode);
+  else if (m.addListener) m.addListener(applyHeroMode);
+});
+
+/* ---------- the top bar goes solid once the film is behind us ---------- */
+if ('IntersectionObserver' in window){
+  new IntersectionObserver(function(es){
+    topbar.classList.toggle('solid', !es[0].isIntersecting);
+  }, { rootMargin: '-70px 0px 0px 0px', threshold: 0 }).observe(hero);
+}
+
+/* ---------- section entrances ---------- */
+var secs = [].slice.call(document.querySelectorAll('.sec'));
+if ('IntersectionObserver' in window){
+  var so = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      setTimeout(function(){ e.target.classList.add('done'); }, 1100);
+      so.unobserve(e.target);
+    });
+  }, {threshold:.1, rootMargin:'0px 0px -6% 0px'});
+  secs.forEach(function(s){ so.observe(s); });
+} else {
+  secs.forEach(function(s){ s.classList.add('in','done'); });
+}
+
+/* ---------- press and hold to raise the light ---------- */
+var lamp = document.getElementById('lamp');
+var findings = [].slice.call(document.querySelectorAll('.finding'));
+var light=0, holding=false, lampRaf=null, lampLast=0, lampDone=false;
+function paintLamp(){
+  lamp.style.setProperty('--light', light.toFixed(3));
+  for (var i=0;i<findings.length;i++){
+    var at = parseFloat(findings[i].getAttribute('data-at'));
+    var fo = clamp((light - at)/0.14, 0, 1);
+    if (Math.abs(fo - (findings[i]._fo||0)) > 0.01){
+      findings[i].style.setProperty('--fo', fo.toFixed(3)); findings[i]._fo = fo;
+    }
+  }
+}
+function lampTick(now){
+  var dt = Math.min(100, now - (lampLast||now)); lampLast = now;
+  light = clamp(light + (holding ? 0.00115 : -0.0016)*dt, 0, 1);
+  paintLamp();
+  if (light >= 1 && !lampDone) lampDone = true;
+  if ((holding && light<1) || (!holding && light>0)) lampRaf = requestAnimationFrame(lampTick);
+  else { lampRaf=null; lampLast=0; }
+}
+function lampStart(e){ if (e && e.cancelable) e.preventDefault(); holding=true;
+  if (lampRaf===null) lampRaf = requestAnimationFrame(lampTick); }
+function lampStop(){ holding=false; if (lampRaf===null && light>0) lampRaf = requestAnimationFrame(lampTick); }
+lamp.addEventListener('pointerdown', lampStart);
+window.addEventListener('pointerup', lampStop);
+window.addEventListener('pointercancel', lampStop);
+lamp.addEventListener('keydown', function(e){ if (e.key===' '||e.key==='Enter'){ e.preventDefault(); lampStart(); } });
+lamp.addEventListener('keyup', function(e){ if (e.key===' '||e.key==='Enter') lampStop(); });
+lamp.addEventListener('blur', lampStop);
+
+/* ---------- faq ---------- */
+[].slice.call(document.querySelectorAll('.qa')).forEach(function(qa){
+  var btn=qa.querySelector('button'), ans=qa.querySelector('.ans');
+  btn.addEventListener('click', function(){
+    var open = qa.getAttribute('data-open')==='1';
+    qa.setAttribute('data-open', open?'0':'1');
+    btn.setAttribute('aria-expanded', open?'false':'true');
+    ans.style.maxHeight = open ? '0px' : (ans.scrollHeight + 'px');
+  });
+});
+
+/* ---------- form. Demo site, so the success state tells the truth. ---------- */
+var form = document.getElementById('book'), ok = document.getElementById('ok');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  var nm=document.getElementById('nm'), ph=document.getElementById('ph'), cs=document.getElementById('cs');
+  if (!nm.value.trim()){ nm.focus(); return; }
+  if (!ph.value.trim()){ ph.focus(); return; }
+  if (!cs.checked){ cs.focus(); return; }
+  ok.classList.add('show');
+  form.reset();
+});
+
+/* ---------- reduced motion, live, both directions ---------- */
+function pinToFinalStates(){
+  secs.forEach(function(s){ s.classList.add('in','done'); });
+  light=1; paintLamp();
+  if (lampRaf!==null){ cancelAnimationFrame(lampRaf); lampRaf=null; }
+}
+var rmq = matchMedia('(prefers-reduced-motion: reduce)');
+function onRM(e){ if (e.matches){ disableScrub(); pinToFinalStates(); } else { applyHeroMode(); } }
+if (rmq.addEventListener) rmq.addEventListener('change', onRM);
+else if (rmq.addListener) rmq.addListener(onRM);
+if (rmq.matches) pinToFinalStates();
+
+document.addEventListener('visibilitychange', function(){
+  document.body.classList.toggle('paused', document.hidden);
+  if (!document.hidden && scrubOn){ paintHero(shown); onScroll(); }
+});
+
+applyHeroMode();
+window.addEventListener('resize', function(){ if (scrubOn) onScroll(); }, {passive:true});
+
+})();
+</script>
+</body>
+</html>
