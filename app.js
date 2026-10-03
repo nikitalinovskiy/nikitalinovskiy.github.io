@@ -84,7 +84,7 @@
             contact: { type: 'string', minLength: 1, maxLength: 160 },
             projectType: { type: 'string', enum: ['Лендинг', 'Сайт компании', 'Редизайн сайта', 'Пока не определился'] },
             task: { type: 'string', minLength: 15, maxLength: 1800 },
-            budget: { type: 'string', enum: ['25–40 тыс. ₽', '40–70 тыс. ₽', 'Более 70 тыс. ₽', 'Хочу обсудить'] }
+            budget: { type: 'string', enum: ['До 10 тыс. ₽', '10–20 тыс. ₽', 'Более 20 тыс. ₽', 'Хочу обсудить'] }
           },
           required: ['name', 'contact', 'projectType', 'task'],
           additionalProperties: false
