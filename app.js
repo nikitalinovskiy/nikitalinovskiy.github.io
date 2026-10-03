@@ -1,52 +1,36 @@
 (() => {
   const config = window.PORTFOLIO_CONFIG || {};
-  const telegram = /^[A-Za-z0-9_]{5,32}$/.test(config.telegram || '') ? config.telegram : 'LinofskiyWayyy';
+  const telegram = /^[A-Za-z0-9_]{5,32}$/.test(config.telegram || '') ? config.telegram : 'linovskiywork';
+  const arrowUp = '<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M7 5h12v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-  document.querySelectorAll('a[href="https://t.me/LinofskiyWayyy"]').forEach(link => {
+  document.querySelectorAll('a[href="https://t.me/linovskiywork"]').forEach(link => {
     link.href = `https://t.me/${telegram}`;
-    if (link.textContent.trim() === '@LinofskiyWayyy ↗') link.textContent = `@${telegram} ↗`;
+    if (link.textContent.trim() === '@linovskiywork' && link.firstChild?.nodeType === Node.TEXT_NODE) {
+      link.firstChild.textContent = `@${telegram} `;
+    }
   });
 
   const leadForm = document.querySelector('#lead-form');
   const leadStatus = document.querySelector('#lead-status');
 
-  async function submitLead(form) {
+  function submitLead(form) {
     const submit = form.querySelector('button[type="submit"]');
     const data = Object.fromEntries(new FormData(form));
-    const payload = {
-      name: data.name,
-      contact: data.contact,
-      projectType: data.projectType,
-      task: data.task,
-      budget: data.budget,
-      website: data.website,
-      consent: data.consent === 'on'
-    };
+    if (data.website) return;
 
-    submit.disabled = true;
-    submit.innerHTML = 'Сохраняю заявку… <span>↗</span>';
-    form.dataset.state = 'loading';
-    leadStatus.textContent = 'Проверяю данные и сохраняю заявку.';
-
-    try {
-      const response = await fetch('/api/leads', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || 'Не удалось отправить заявку.');
-
-      form.dataset.state = 'success';
-      form.reset();
-      submit.innerHTML = 'Заявка отправлена <span>✓</span>';
-      leadStatus.textContent = `Спасибо! Заявка №${result.requestId} сохранена. Я свяжусь с вами по указанному контакту.`;
-    } catch (error) {
-      form.dataset.state = 'error';
-      submit.disabled = false;
-      submit.innerHTML = 'Попробовать снова <span>↗</span>';
-      leadStatus.textContent = `${error.message} Можно написать напрямую в Telegram.`;
-    }
+    const message = [
+      'Здравствуйте! Хочу обсудить сайт.',
+      `Имя: ${data.name}`,
+      `Контакт: ${data.contact}`,
+      `Формат: ${data.projectType}`,
+      `Бюджет: ${data.budget}`,
+      `Задача: ${data.task}`
+    ].join('\n');
+    const link = `https://t.me/${telegram}?text=${encodeURIComponent(message)}`;
+    form.dataset.state = 'success';
+    submit.innerHTML = `Открыть Telegram снова <span>${arrowUp}</span>`;
+    leadStatus.textContent = 'Сообщение подготовлено в Telegram. Нажмите «Отправить» в чате — только после этого я его получу.';
+    window.location.assign(link);
   }
 
   leadForm?.addEventListener('submit', event => {

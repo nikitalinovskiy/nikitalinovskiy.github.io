@@ -362,6 +362,13 @@ form{display:grid;gap:12px}
 @media (max-width:600px){
   body{font-size:16px}
   .wrap{width:calc(100% - 32px)}
+  .top{background:var(--dark)}
+  .top.solid{background:rgba(245,242,237,.96)}
+  .top .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:12px 0}
+  .mark{min-width:0;align-items:center}
+  .mark b{font-size:16px;letter-spacing:.13em;white-space:nowrap}
+  .mark span,.topinfo{display:none}
+  .top .btn{width:auto;min-height:44px;padding:10px 16px;font-size:13px;white-space:nowrap}
   .svc{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .gua{grid-template-columns:1fr}

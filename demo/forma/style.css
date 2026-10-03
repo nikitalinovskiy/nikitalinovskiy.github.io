@@ -41,6 +41,8 @@
 @media(max-width:370px){.hero-visual{height:435px}.hero-implant-card{width:123px;height:193px}.hero-human-note{font-size:16px;right:12px}.hero-human figcaption{font-size:7px;left:12px;right:12px}}
 @media(prefers-reduced-motion:reduce){.hero-implant-card{transition:none}.hero-implant-card:hover{transform:rotate(-5deg)}}
 /* Keep the mobile disassembly visible throughout its scroll timeline. */
+.ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.13em;flex:none}
+.ui-star{display:block;width:1em;height:1em}
 .lab-motion-track{display:contents}
 @media(max-width:760px) and (prefers-reduced-motion:no-preference){
   .lab-sticky{overflow:visible}

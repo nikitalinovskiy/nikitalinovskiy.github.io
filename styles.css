@@ -18,3 +18,33 @@
 @media(max-width:760px){.header nav a:last-child{display:block}}
 @media(max-width:460px){.project-stage{grid-template-columns:1fr}.project-stage-copy{padding:32px 25px}.project-stage-copy>strong{font-size:100px;margin:30px 0 24px}.project-stage-copy p{font-size:27px}.project-stage>img:not(.implant-tile){height:360px;min-height:0;object-position:center 35%}.hero-end p br{display:none}.button{gap:24px}.contact-layout{position:relative}.contact-circle{position:absolute;right:0;top:0;width:64px;height:64px;margin-top:0}.contact-circle>span{font-size:32px}.contact-circle small{display:none}}
 [hidden]{display:none!important}
+
+@media(max-width:520px){.header nav a:first-child{display:none}.wordmark{font-size:22px;letter-spacing:-1px}}
+
+/* Keep the mobile reading order and form at a comfortable line length. */
+@media (max-width:760px){
+  .service-list article{grid-template-columns:30px minmax(0,1fr)}
+  .service-list article>div:last-child{grid-column:2;min-width:0}
+  .service-list p{grid-column:auto}
+  .service-list ul{font-size:15px;line-height:1.65}
+  .contact-layout{display:block}
+  .contact-layout>div{max-width:620px}
+  .lead-form{width:100%;margin-top:36px}
+  .hero-end p{max-width:38ch;line-height:1.6}
+}
+@media (max-width:600px){
+  .hero-composition h1{max-width:100%;margin:48px 0 24px;line-height:1.02}
+  .hero-preview{position:relative;right:auto;bottom:auto;display:block;width:min(48vw,190px);margin:0 4% 32px auto;transform:rotate(4deg)}
+  .hero-symbol{left:10%;bottom:80px}
+  .hero-end .button{width:100%}
+  .contact-layout>div>.button{width:100%}
+}
+@media (max-width:360px){
+  .header{gap:8px}
+  .wordmark{font-size:18px;white-space:nowrap}
+  .header nav a:last-child{font-size:11px;white-space:nowrap}
+}
+
+/* Draw interface symbols as vectors so mobile browsers cannot substitute emoji. */
+.ui-icon{display:inline-block;width:1em;height:1em;vertical-align:-.13em;flex:none}
+.ui-star{display:block;width:1em;height:1em}

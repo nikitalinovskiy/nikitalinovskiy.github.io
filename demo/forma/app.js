@@ -1,5 +1,6 @@
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
+const directionIcon = expanded => `<svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${expanded ? 'M19 5 5 19M5 7v12h12' : 'M5 19 19 5M7 5h12v12'}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const mobile = matchMedia('(max-width: 760px)');
 let selectedPart = 0, manualSeparation = null, separation = 0, modelAPI = null, tweenFrame = null;
@@ -29,7 +30,7 @@ $$('[data-part]').forEach(button => button.addEventListener('click', () => setPa
 function updateControls(value) {
   $('#separation').value = String(Math.round(value * 100));
   const expanded = value > .5;
-  $('#explode').innerHTML = `${expanded ? 'Собрать' : 'Разобрать'} <span>${expanded ? '↙' : '↗'}</span>`;
+  $('#explode').innerHTML = `${expanded ? 'Собрать' : 'Разобрать'} <span>${directionIcon(expanded)}</span>`;
   $('#explode').setAttribute('aria-pressed', String(expanded));
   $('#auto-mode').classList.toggle('active', manualSeparation === null);
   $('#auto-mode').textContent = reducedMotion.matches ? '↻ Сбросить' : '↻ По прокрутке';
